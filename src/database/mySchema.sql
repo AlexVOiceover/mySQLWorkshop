@@ -1,0 +1,12 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    content TEXT,
+    created_at DATE DEFAULT CURRENT_DATE
+);
+
+SELECT * FROM tasks;
+
+
+COMMIT;

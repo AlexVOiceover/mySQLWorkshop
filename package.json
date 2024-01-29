@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "eslint": "^8.23.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.22"
   },
   "volta": {
     "node": "18.16.0"
