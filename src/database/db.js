@@ -24,6 +24,6 @@ module.exports = db
 // console.log(result)
 const { createTask } = require('../model/tasks.js')
 
-createTask('Eat a banana')
-const tasks = db.prepare('SELECT * FROM tasks').all()
-console.log(tasks)
+const result = createTask('Eat a banana')
+// const tasks = db.prepare('SELECT * FROM tasks').all()
+console.log(result)
