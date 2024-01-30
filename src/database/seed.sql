@@ -7,6 +7,12 @@ PRAGMA foreign_keys = OFF;
 
 BEGIN;
 
+INSERT INTO tasks VALUES
+  (1, 'Create my first todo', '2022-09-16 01:01:01',0),
+  (2, 'Buy milk', '2022-09-16 11:10:07',1),
+  (3, 'Become a 10x developer', '2022-09-16 23:59:59',0)
+ON CONFLICT(id) DO NOTHING;
+
 INSERT INTO categories VALUES
   (1, 'Beverages', 'Soft drinks, coffees, teas, beers, and ales'),
   (2, 'Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings'),

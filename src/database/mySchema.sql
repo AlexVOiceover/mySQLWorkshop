@@ -21,11 +21,12 @@ CREATE TABLE IF NOT EXISTS products (
   CHECK (units_on_order>=(0))
 );
 
-
+--  DROP TABLE tasks;
 CREATE TABLE IF NOT EXISTS tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     content TEXT,
-    created_at DATE DEFAULT CURRENT_DATE
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    complete INTEGER DEFAULT 0 CHECK(complete IN (0, 1))
 );
 
 SELECT * FROM tasks;
